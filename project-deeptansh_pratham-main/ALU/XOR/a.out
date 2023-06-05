@@ -1,0 +1,1016 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55570d249ae0 .scope module, "xor64_tb" "xor64_tb" 2 3;
+ .timescale -9 -12;
+v0x55570d276e30_0 .var/s "p", 63 0;
+v0x55570d276f20_0 .var/s "q", 63 0;
+v0x55570d276ff0_0 .net/s "r", 63 0, L_0x55570d28b080;  1 drivers
+S_0x55570d249750 .scope module, "inst" "xor64" 2 8, 3 3 0, S_0x55570d249ae0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 64 "p"
+    .port_info 1 /INPUT 64 "q"
+    .port_info 2 /OUTPUT 64 "r"
+v0x55570d276b00_0 .net/s "p", 63 0, v0x55570d276e30_0;  1 drivers
+v0x55570d276be0_0 .net/s "q", 63 0, v0x55570d276f20_0;  1 drivers
+v0x55570d276cc0_0 .net/s "r", 63 0, L_0x55570d28b080;  alias, 1 drivers
+L_0x55570d2771f0 .part v0x55570d276e30_0, 0, 1;
+L_0x55570d277330 .part v0x55570d276f20_0, 0, 1;
+L_0x55570d2774e0 .part v0x55570d276e30_0, 1, 1;
+L_0x55570d2775d0 .part v0x55570d276f20_0, 1, 1;
+L_0x55570d277760 .part v0x55570d276e30_0, 2, 1;
+L_0x55570d277850 .part v0x55570d276f20_0, 2, 1;
+L_0x55570d2779a0 .part v0x55570d276e30_0, 3, 1;
+L_0x55570d277a40 .part v0x55570d276f20_0, 3, 1;
+L_0x55570d277c20 .part v0x55570d276e30_0, 4, 1;
+L_0x55570d277d10 .part v0x55570d276f20_0, 4, 1;
+L_0x55570d277f00 .part v0x55570d276e30_0, 5, 1;
+L_0x55570d277fa0 .part v0x55570d276f20_0, 5, 1;
+L_0x55570d2781a0 .part v0x55570d276e30_0, 6, 1;
+L_0x55570d278290 .part v0x55570d276f20_0, 6, 1;
+L_0x55570d278430 .part v0x55570d276e30_0, 7, 1;
+L_0x55570d278520 .part v0x55570d276f20_0, 7, 1;
+L_0x55570d278740 .part v0x55570d276e30_0, 8, 1;
+L_0x55570d278830 .part v0x55570d276f20_0, 8, 1;
+L_0x55570d278a60 .part v0x55570d276e30_0, 9, 1;
+L_0x55570d278b50 .part v0x55570d276f20_0, 9, 1;
+L_0x55570d278920 .part v0x55570d276e30_0, 10, 1;
+L_0x55570d278de0 .part v0x55570d276f20_0, 10, 1;
+L_0x55570d279030 .part v0x55570d276e30_0, 11, 1;
+L_0x55570d279120 .part v0x55570d276f20_0, 11, 1;
+L_0x55570d279380 .part v0x55570d276e30_0, 12, 1;
+L_0x55570d279470 .part v0x55570d276f20_0, 12, 1;
+L_0x55570d2796e0 .part v0x55570d276e30_0, 13, 1;
+L_0x55570d2797d0 .part v0x55570d276f20_0, 13, 1;
+L_0x55570d279a50 .part v0x55570d276e30_0, 14, 1;
+L_0x55570d279d50 .part v0x55570d276f20_0, 14, 1;
+L_0x55570d27a1f0 .part v0x55570d276e30_0, 15, 1;
+L_0x55570d27a2e0 .part v0x55570d276f20_0, 15, 1;
+L_0x55570d27a580 .part v0x55570d276e30_0, 16, 1;
+L_0x55570d27a670 .part v0x55570d276f20_0, 16, 1;
+L_0x55570d27a920 .part v0x55570d276e30_0, 17, 1;
+L_0x55570d27aa10 .part v0x55570d276f20_0, 17, 1;
+L_0x55570d27ac30 .part v0x55570d276e30_0, 18, 1;
+L_0x55570d27acd0 .part v0x55570d276f20_0, 18, 1;
+L_0x55570d27af70 .part v0x55570d276e30_0, 19, 1;
+L_0x55570d27b060 .part v0x55570d276f20_0, 19, 1;
+L_0x55570d27b340 .part v0x55570d276e30_0, 20, 1;
+L_0x55570d27b430 .part v0x55570d276f20_0, 20, 1;
+L_0x55570d27b720 .part v0x55570d276e30_0, 21, 1;
+L_0x55570d27b810 .part v0x55570d276f20_0, 21, 1;
+L_0x55570d27bb10 .part v0x55570d276e30_0, 22, 1;
+L_0x55570d27bc00 .part v0x55570d276f20_0, 22, 1;
+L_0x55570d27bf10 .part v0x55570d276e30_0, 23, 1;
+L_0x55570d27c000 .part v0x55570d276f20_0, 23, 1;
+L_0x55570d27c320 .part v0x55570d276e30_0, 24, 1;
+L_0x55570d27c410 .part v0x55570d276f20_0, 24, 1;
+L_0x55570d27c740 .part v0x55570d276e30_0, 25, 1;
+L_0x55570d27c830 .part v0x55570d276f20_0, 25, 1;
+L_0x55570d27cb70 .part v0x55570d276e30_0, 26, 1;
+L_0x55570d27cc60 .part v0x55570d276f20_0, 26, 1;
+L_0x55570d27cfb0 .part v0x55570d276e30_0, 27, 1;
+L_0x55570d27d0a0 .part v0x55570d276f20_0, 27, 1;
+L_0x55570d27d400 .part v0x55570d276e30_0, 28, 1;
+L_0x55570d27d4f0 .part v0x55570d276f20_0, 28, 1;
+L_0x55570d27d860 .part v0x55570d276e30_0, 29, 1;
+L_0x55570d27d950 .part v0x55570d276f20_0, 29, 1;
+L_0x55570d27dcd0 .part v0x55570d276e30_0, 30, 1;
+L_0x55570d27e1d0 .part v0x55570d276f20_0, 30, 1;
+L_0x55570d27e970 .part v0x55570d276e30_0, 31, 1;
+L_0x55570d27ea60 .part v0x55570d276f20_0, 31, 1;
+L_0x55570d27ee00 .part v0x55570d276e30_0, 32, 1;
+L_0x55570d27eef0 .part v0x55570d276f20_0, 32, 1;
+L_0x55570d27f2a0 .part v0x55570d276e30_0, 33, 1;
+L_0x55570d27f390 .part v0x55570d276f20_0, 33, 1;
+L_0x55570d27f750 .part v0x55570d276e30_0, 34, 1;
+L_0x55570d27f840 .part v0x55570d276f20_0, 34, 1;
+L_0x55570d27fc10 .part v0x55570d276e30_0, 35, 1;
+L_0x55570d27fd00 .part v0x55570d276f20_0, 35, 1;
+L_0x55570d2800e0 .part v0x55570d276e30_0, 36, 1;
+L_0x55570d2801d0 .part v0x55570d276f20_0, 36, 1;
+L_0x55570d2805c0 .part v0x55570d276e30_0, 37, 1;
+L_0x55570d2806b0 .part v0x55570d276f20_0, 37, 1;
+L_0x55570d280ab0 .part v0x55570d276e30_0, 38, 1;
+L_0x55570d280ba0 .part v0x55570d276f20_0, 38, 1;
+L_0x55570d280fb0 .part v0x55570d276e30_0, 39, 1;
+L_0x55570d2810a0 .part v0x55570d276f20_0, 39, 1;
+L_0x55570d2814c0 .part v0x55570d276e30_0, 40, 1;
+L_0x55570d2815b0 .part v0x55570d276f20_0, 40, 1;
+L_0x55570d2819e0 .part v0x55570d276e30_0, 41, 1;
+L_0x55570d281ad0 .part v0x55570d276f20_0, 41, 1;
+L_0x55570d281f10 .part v0x55570d276e30_0, 42, 1;
+L_0x55570d282000 .part v0x55570d276f20_0, 42, 1;
+L_0x55570d282450 .part v0x55570d276e30_0, 43, 1;
+L_0x55570d282540 .part v0x55570d276f20_0, 43, 1;
+L_0x55570d2829a0 .part v0x55570d276e30_0, 44, 1;
+L_0x55570d282a90 .part v0x55570d276f20_0, 44, 1;
+L_0x55570d282f00 .part v0x55570d276e30_0, 45, 1;
+L_0x55570d282ff0 .part v0x55570d276f20_0, 45, 1;
+L_0x55570d283470 .part v0x55570d276e30_0, 46, 1;
+L_0x55570d283560 .part v0x55570d276f20_0, 46, 1;
+L_0x55570d2839f0 .part v0x55570d276e30_0, 47, 1;
+L_0x55570d283ae0 .part v0x55570d276f20_0, 47, 1;
+L_0x55570d283f80 .part v0x55570d276e30_0, 48, 1;
+L_0x55570d284070 .part v0x55570d276f20_0, 48, 1;
+L_0x55570d284520 .part v0x55570d276e30_0, 49, 1;
+L_0x55570d284610 .part v0x55570d276f20_0, 49, 1;
+L_0x55570d284ad0 .part v0x55570d276e30_0, 50, 1;
+L_0x55570d284bc0 .part v0x55570d276f20_0, 50, 1;
+L_0x55570d285090 .part v0x55570d276e30_0, 51, 1;
+L_0x55570d285180 .part v0x55570d276f20_0, 51, 1;
+L_0x55570d285660 .part v0x55570d276e30_0, 52, 1;
+L_0x55570d285750 .part v0x55570d276f20_0, 52, 1;
+L_0x55570d285c40 .part v0x55570d276e30_0, 53, 1;
+L_0x55570d285d30 .part v0x55570d276f20_0, 53, 1;
+L_0x55570d286230 .part v0x55570d276e30_0, 54, 1;
+L_0x55570d286320 .part v0x55570d276f20_0, 54, 1;
+L_0x55570d286830 .part v0x55570d276e30_0, 55, 1;
+L_0x55570d286920 .part v0x55570d276f20_0, 55, 1;
+L_0x55570d286e40 .part v0x55570d276e30_0, 56, 1;
+L_0x55570d286f30 .part v0x55570d276f20_0, 56, 1;
+L_0x55570d287460 .part v0x55570d276e30_0, 57, 1;
+L_0x55570d287550 .part v0x55570d276f20_0, 57, 1;
+L_0x55570d287a90 .part v0x55570d276e30_0, 58, 1;
+L_0x55570d287b80 .part v0x55570d276f20_0, 58, 1;
+L_0x55570d2880d0 .part v0x55570d276e30_0, 59, 1;
+L_0x55570d2881c0 .part v0x55570d276f20_0, 59, 1;
+L_0x55570d288720 .part v0x55570d276e30_0, 60, 1;
+L_0x55570d288810 .part v0x55570d276f20_0, 60, 1;
+L_0x55570d288d80 .part v0x55570d276e30_0, 61, 1;
+L_0x55570d288e70 .part v0x55570d276f20_0, 61, 1;
+L_0x55570d2893f0 .part v0x55570d276e30_0, 62, 1;
+L_0x55570d289cf0 .part v0x55570d276f20_0, 62, 1;
+L_0x55570d28aa90 .part v0x55570d276e30_0, 63, 1;
+L_0x55570d28ab80 .part v0x55570d276f20_0, 63, 1;
+LS_0x55570d28b080_0_0 .concat8 [ 1 1 1 1], L_0x55570d2770f0, L_0x55570d277470, L_0x55570d2776f0, L_0x55570d277930;
+LS_0x55570d28b080_0_4 .concat8 [ 1 1 1 1], L_0x55570d277b80, L_0x55570d277e60, L_0x55570d278100, L_0x55570d278090;
+LS_0x55570d28b080_0_8 .concat8 [ 1 1 1 1], L_0x55570d2786a0, L_0x55570d2789c0, L_0x55570d278cf0, L_0x55570d278f90;
+LS_0x55570d28b080_0_12 .concat8 [ 1 1 1 1], L_0x55570d2792e0, L_0x55570d279640, L_0x55570d2799b0, L_0x55570d27a150;
+LS_0x55570d28b080_0_16 .concat8 [ 1 1 1 1], L_0x55570d27a4e0, L_0x55570d27a880, L_0x55570d27a760, L_0x55570d27af00;
+LS_0x55570d28b080_0_20 .concat8 [ 1 1 1 1], L_0x55570d27b2a0, L_0x55570d27b680, L_0x55570d27ba70, L_0x55570d27be70;
+LS_0x55570d28b080_0_24 .concat8 [ 1 1 1 1], L_0x55570d27c280, L_0x55570d27c6a0, L_0x55570d27cad0, L_0x55570d27cf10;
+LS_0x55570d28b080_0_28 .concat8 [ 1 1 1 1], L_0x55570d27d360, L_0x55570d27d7c0, L_0x55570d27dc30, L_0x55570d27e8d0;
+LS_0x55570d28b080_0_32 .concat8 [ 1 1 1 1], L_0x55570d27ed60, L_0x55570d27f200, L_0x55570d27f6b0, L_0x55570d27fb70;
+LS_0x55570d28b080_0_36 .concat8 [ 1 1 1 1], L_0x55570d280040, L_0x55570d280520, L_0x55570d280a10, L_0x55570d280f10;
+LS_0x55570d28b080_0_40 .concat8 [ 1 1 1 1], L_0x55570d281420, L_0x55570d281940, L_0x55570d281e70, L_0x55570d2823b0;
+LS_0x55570d28b080_0_44 .concat8 [ 1 1 1 1], L_0x55570d282900, L_0x55570d282e60, L_0x55570d2833d0, L_0x55570d283950;
+LS_0x55570d28b080_0_48 .concat8 [ 1 1 1 1], L_0x55570d283ee0, L_0x55570d284480, L_0x55570d284a30, L_0x55570d284ff0;
+LS_0x55570d28b080_0_52 .concat8 [ 1 1 1 1], L_0x55570d2855c0, L_0x55570d285ba0, L_0x55570d286190, L_0x55570d286790;
+LS_0x55570d28b080_0_56 .concat8 [ 1 1 1 1], L_0x55570d286da0, L_0x55570d2873c0, L_0x55570d2879f0, L_0x55570d288030;
+LS_0x55570d28b080_0_60 .concat8 [ 1 1 1 1], L_0x55570d288680, L_0x55570d288ce0, L_0x55570d289350, L_0x55570d28a9f0;
+LS_0x55570d28b080_1_0 .concat8 [ 4 4 4 4], LS_0x55570d28b080_0_0, LS_0x55570d28b080_0_4, LS_0x55570d28b080_0_8, LS_0x55570d28b080_0_12;
+LS_0x55570d28b080_1_4 .concat8 [ 4 4 4 4], LS_0x55570d28b080_0_16, LS_0x55570d28b080_0_20, LS_0x55570d28b080_0_24, LS_0x55570d28b080_0_28;
+LS_0x55570d28b080_1_8 .concat8 [ 4 4 4 4], LS_0x55570d28b080_0_32, LS_0x55570d28b080_0_36, LS_0x55570d28b080_0_40, LS_0x55570d28b080_0_44;
+LS_0x55570d28b080_1_12 .concat8 [ 4 4 4 4], LS_0x55570d28b080_0_48, LS_0x55570d28b080_0_52, LS_0x55570d28b080_0_56, LS_0x55570d28b080_0_60;
+L_0x55570d28b080 .concat8 [ 16 16 16 16], LS_0x55570d28b080_1_0, LS_0x55570d28b080_1_4, LS_0x55570d28b080_1_8, LS_0x55570d28b080_1_12;
+S_0x55570d248e90 .scope generate, "genblk1[0]" "genblk1[0]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d23b4e0 .param/l "idx" 0 3 11, +C4<00>;
+S_0x55570d248b00 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d248e90;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2770f0 .functor XOR 1, L_0x55570d2771f0, L_0x55570d277330, C4<0>, C4<0>;
+v0x55570d21e3c0_0 .net "p", 0 0, L_0x55570d2771f0;  1 drivers
+v0x55570d21d790_0 .net "q", 0 0, L_0x55570d277330;  1 drivers
+v0x55570d21cb60_0 .net "r", 0 0, L_0x55570d2770f0;  1 drivers
+S_0x55570d257e40 .scope generate, "genblk1[1]" "genblk1[1]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d258030 .param/l "idx" 0 3 11, +C4<01>;
+S_0x55570d2580f0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d257e40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d277470 .functor XOR 1, L_0x55570d2774e0, L_0x55570d2775d0, C4<0>, C4<0>;
+v0x55570d21bf30_0 .net "p", 0 0, L_0x55570d2774e0;  1 drivers
+v0x55570d21b300_0 .net "q", 0 0, L_0x55570d2775d0;  1 drivers
+v0x55570d21a6d0_0 .net "r", 0 0, L_0x55570d277470;  1 drivers
+S_0x55570d258410 .scope generate, "genblk1[2]" "genblk1[2]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2585e0 .param/l "idx" 0 3 11, +C4<010>;
+S_0x55570d2586a0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d258410;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2776f0 .functor XOR 1, L_0x55570d277760, L_0x55570d277850, C4<0>, C4<0>;
+v0x55570d219860_0 .net "p", 0 0, L_0x55570d277760;  1 drivers
+v0x55570d258920_0 .net "q", 0 0, L_0x55570d277850;  1 drivers
+v0x55570d2589e0_0 .net "r", 0 0, L_0x55570d2776f0;  1 drivers
+S_0x55570d258b00 .scope generate, "genblk1[3]" "genblk1[3]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d258cd0 .param/l "idx" 0 3 11, +C4<011>;
+S_0x55570d258db0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d258b00;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d277930 .functor XOR 1, L_0x55570d2779a0, L_0x55570d277a40, C4<0>, C4<0>;
+v0x55570d258ff0_0 .net "p", 0 0, L_0x55570d2779a0;  1 drivers
+v0x55570d2590d0_0 .net "q", 0 0, L_0x55570d277a40;  1 drivers
+v0x55570d259190_0 .net "r", 0 0, L_0x55570d277930;  1 drivers
+S_0x55570d2592b0 .scope generate, "genblk1[4]" "genblk1[4]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2594d0 .param/l "idx" 0 3 11, +C4<0100>;
+S_0x55570d2595b0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2592b0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d277b80 .functor XOR 1, L_0x55570d277c20, L_0x55570d277d10, C4<0>, C4<0>;
+v0x55570d2597f0_0 .net "p", 0 0, L_0x55570d277c20;  1 drivers
+v0x55570d2598d0_0 .net "q", 0 0, L_0x55570d277d10;  1 drivers
+v0x55570d259990_0 .net "r", 0 0, L_0x55570d277b80;  1 drivers
+S_0x55570d259ab0 .scope generate, "genblk1[5]" "genblk1[5]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d259c80 .param/l "idx" 0 3 11, +C4<0101>;
+S_0x55570d259d60 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d259ab0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d277e60 .functor XOR 1, L_0x55570d277f00, L_0x55570d277fa0, C4<0>, C4<0>;
+v0x55570d259fa0_0 .net "p", 0 0, L_0x55570d277f00;  1 drivers
+v0x55570d25a080_0 .net "q", 0 0, L_0x55570d277fa0;  1 drivers
+v0x55570d25a140_0 .net "r", 0 0, L_0x55570d277e60;  1 drivers
+S_0x55570d25a290 .scope generate, "genblk1[6]" "genblk1[6]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25a460 .param/l "idx" 0 3 11, +C4<0110>;
+S_0x55570d25a540 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25a290;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d278100 .functor XOR 1, L_0x55570d2781a0, L_0x55570d278290, C4<0>, C4<0>;
+v0x55570d25a780_0 .net "p", 0 0, L_0x55570d2781a0;  1 drivers
+v0x55570d25a860_0 .net "q", 0 0, L_0x55570d278290;  1 drivers
+v0x55570d25a920_0 .net "r", 0 0, L_0x55570d278100;  1 drivers
+S_0x55570d25aa70 .scope generate, "genblk1[7]" "genblk1[7]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25ac40 .param/l "idx" 0 3 11, +C4<0111>;
+S_0x55570d25ad20 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25aa70;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d278090 .functor XOR 1, L_0x55570d278430, L_0x55570d278520, C4<0>, C4<0>;
+v0x55570d25af60_0 .net "p", 0 0, L_0x55570d278430;  1 drivers
+v0x55570d25b040_0 .net "q", 0 0, L_0x55570d278520;  1 drivers
+v0x55570d25b100_0 .net "r", 0 0, L_0x55570d278090;  1 drivers
+S_0x55570d25b250 .scope generate, "genblk1[8]" "genblk1[8]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d259480 .param/l "idx" 0 3 11, +C4<01000>;
+S_0x55570d25b4b0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25b250;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2786a0 .functor XOR 1, L_0x55570d278740, L_0x55570d278830, C4<0>, C4<0>;
+v0x55570d25b6f0_0 .net "p", 0 0, L_0x55570d278740;  1 drivers
+v0x55570d25b7d0_0 .net "q", 0 0, L_0x55570d278830;  1 drivers
+v0x55570d25b890_0 .net "r", 0 0, L_0x55570d2786a0;  1 drivers
+S_0x55570d25b9e0 .scope generate, "genblk1[9]" "genblk1[9]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25bbb0 .param/l "idx" 0 3 11, +C4<01001>;
+S_0x55570d25bc90 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25b9e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2789c0 .functor XOR 1, L_0x55570d278a60, L_0x55570d278b50, C4<0>, C4<0>;
+v0x55570d25bed0_0 .net "p", 0 0, L_0x55570d278a60;  1 drivers
+v0x55570d25bfb0_0 .net "q", 0 0, L_0x55570d278b50;  1 drivers
+v0x55570d25c070_0 .net "r", 0 0, L_0x55570d2789c0;  1 drivers
+S_0x55570d25c1c0 .scope generate, "genblk1[10]" "genblk1[10]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25c390 .param/l "idx" 0 3 11, +C4<01010>;
+S_0x55570d25c470 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25c1c0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d278cf0 .functor XOR 1, L_0x55570d278920, L_0x55570d278de0, C4<0>, C4<0>;
+v0x55570d25c6b0_0 .net "p", 0 0, L_0x55570d278920;  1 drivers
+v0x55570d25c790_0 .net "q", 0 0, L_0x55570d278de0;  1 drivers
+v0x55570d25c850_0 .net "r", 0 0, L_0x55570d278cf0;  1 drivers
+S_0x55570d25c9a0 .scope generate, "genblk1[11]" "genblk1[11]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25cb70 .param/l "idx" 0 3 11, +C4<01011>;
+S_0x55570d25cc50 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25c9a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d278f90 .functor XOR 1, L_0x55570d279030, L_0x55570d279120, C4<0>, C4<0>;
+v0x55570d25ce90_0 .net "p", 0 0, L_0x55570d279030;  1 drivers
+v0x55570d25cf70_0 .net "q", 0 0, L_0x55570d279120;  1 drivers
+v0x55570d25d030_0 .net "r", 0 0, L_0x55570d278f90;  1 drivers
+S_0x55570d25d180 .scope generate, "genblk1[12]" "genblk1[12]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25d350 .param/l "idx" 0 3 11, +C4<01100>;
+S_0x55570d25d430 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25d180;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2792e0 .functor XOR 1, L_0x55570d279380, L_0x55570d279470, C4<0>, C4<0>;
+v0x55570d25d670_0 .net "p", 0 0, L_0x55570d279380;  1 drivers
+v0x55570d25d750_0 .net "q", 0 0, L_0x55570d279470;  1 drivers
+v0x55570d25d810_0 .net "r", 0 0, L_0x55570d2792e0;  1 drivers
+S_0x55570d25d960 .scope generate, "genblk1[13]" "genblk1[13]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25db30 .param/l "idx" 0 3 11, +C4<01101>;
+S_0x55570d25dc10 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25d960;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d279640 .functor XOR 1, L_0x55570d2796e0, L_0x55570d2797d0, C4<0>, C4<0>;
+v0x55570d25de50_0 .net "p", 0 0, L_0x55570d2796e0;  1 drivers
+v0x55570d25df30_0 .net "q", 0 0, L_0x55570d2797d0;  1 drivers
+v0x55570d25dff0_0 .net "r", 0 0, L_0x55570d279640;  1 drivers
+S_0x55570d25e140 .scope generate, "genblk1[14]" "genblk1[14]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25e310 .param/l "idx" 0 3 11, +C4<01110>;
+S_0x55570d25e3f0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25e140;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2799b0 .functor XOR 1, L_0x55570d279a50, L_0x55570d279d50, C4<0>, C4<0>;
+v0x55570d25e630_0 .net "p", 0 0, L_0x55570d279a50;  1 drivers
+v0x55570d25e710_0 .net "q", 0 0, L_0x55570d279d50;  1 drivers
+v0x55570d25e7d0_0 .net "r", 0 0, L_0x55570d2799b0;  1 drivers
+S_0x55570d25e920 .scope generate, "genblk1[15]" "genblk1[15]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25eaf0 .param/l "idx" 0 3 11, +C4<01111>;
+S_0x55570d25ebd0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25e920;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27a150 .functor XOR 1, L_0x55570d27a1f0, L_0x55570d27a2e0, C4<0>, C4<0>;
+v0x55570d25ee10_0 .net "p", 0 0, L_0x55570d27a1f0;  1 drivers
+v0x55570d25eef0_0 .net "q", 0 0, L_0x55570d27a2e0;  1 drivers
+v0x55570d25efb0_0 .net "r", 0 0, L_0x55570d27a150;  1 drivers
+S_0x55570d25f100 .scope generate, "genblk1[16]" "genblk1[16]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25f2d0 .param/l "idx" 0 3 11, +C4<010000>;
+S_0x55570d25f3b0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25f100;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27a4e0 .functor XOR 1, L_0x55570d27a580, L_0x55570d27a670, C4<0>, C4<0>;
+v0x55570d25f5f0_0 .net "p", 0 0, L_0x55570d27a580;  1 drivers
+v0x55570d25f6d0_0 .net "q", 0 0, L_0x55570d27a670;  1 drivers
+v0x55570d25f790_0 .net "r", 0 0, L_0x55570d27a4e0;  1 drivers
+S_0x55570d25f8e0 .scope generate, "genblk1[17]" "genblk1[17]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d25fab0 .param/l "idx" 0 3 11, +C4<010001>;
+S_0x55570d25fb90 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d25f8e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27a880 .functor XOR 1, L_0x55570d27a920, L_0x55570d27aa10, C4<0>, C4<0>;
+v0x55570d25fdd0_0 .net "p", 0 0, L_0x55570d27a920;  1 drivers
+v0x55570d25feb0_0 .net "q", 0 0, L_0x55570d27aa10;  1 drivers
+v0x55570d25ff70_0 .net "r", 0 0, L_0x55570d27a880;  1 drivers
+S_0x55570d2600c0 .scope generate, "genblk1[18]" "genblk1[18]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d260290 .param/l "idx" 0 3 11, +C4<010010>;
+S_0x55570d260370 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2600c0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27a760 .functor XOR 1, L_0x55570d27ac30, L_0x55570d27acd0, C4<0>, C4<0>;
+v0x55570d2605b0_0 .net "p", 0 0, L_0x55570d27ac30;  1 drivers
+v0x55570d260690_0 .net "q", 0 0, L_0x55570d27acd0;  1 drivers
+v0x55570d260750_0 .net "r", 0 0, L_0x55570d27a760;  1 drivers
+S_0x55570d2608a0 .scope generate, "genblk1[19]" "genblk1[19]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d260a70 .param/l "idx" 0 3 11, +C4<010011>;
+S_0x55570d260b50 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2608a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27af00 .functor XOR 1, L_0x55570d27af70, L_0x55570d27b060, C4<0>, C4<0>;
+v0x55570d260d90_0 .net "p", 0 0, L_0x55570d27af70;  1 drivers
+v0x55570d260e70_0 .net "q", 0 0, L_0x55570d27b060;  1 drivers
+v0x55570d260f30_0 .net "r", 0 0, L_0x55570d27af00;  1 drivers
+S_0x55570d261080 .scope generate, "genblk1[20]" "genblk1[20]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d261250 .param/l "idx" 0 3 11, +C4<010100>;
+S_0x55570d261330 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d261080;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27b2a0 .functor XOR 1, L_0x55570d27b340, L_0x55570d27b430, C4<0>, C4<0>;
+v0x55570d261570_0 .net "p", 0 0, L_0x55570d27b340;  1 drivers
+v0x55570d261650_0 .net "q", 0 0, L_0x55570d27b430;  1 drivers
+v0x55570d261710_0 .net "r", 0 0, L_0x55570d27b2a0;  1 drivers
+S_0x55570d261860 .scope generate, "genblk1[21]" "genblk1[21]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d261a30 .param/l "idx" 0 3 11, +C4<010101>;
+S_0x55570d261b10 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d261860;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27b680 .functor XOR 1, L_0x55570d27b720, L_0x55570d27b810, C4<0>, C4<0>;
+v0x55570d261d50_0 .net "p", 0 0, L_0x55570d27b720;  1 drivers
+v0x55570d261e30_0 .net "q", 0 0, L_0x55570d27b810;  1 drivers
+v0x55570d261ef0_0 .net "r", 0 0, L_0x55570d27b680;  1 drivers
+S_0x55570d262040 .scope generate, "genblk1[22]" "genblk1[22]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d262210 .param/l "idx" 0 3 11, +C4<010110>;
+S_0x55570d2622f0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d262040;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27ba70 .functor XOR 1, L_0x55570d27bb10, L_0x55570d27bc00, C4<0>, C4<0>;
+v0x55570d262530_0 .net "p", 0 0, L_0x55570d27bb10;  1 drivers
+v0x55570d262610_0 .net "q", 0 0, L_0x55570d27bc00;  1 drivers
+v0x55570d2626d0_0 .net "r", 0 0, L_0x55570d27ba70;  1 drivers
+S_0x55570d262820 .scope generate, "genblk1[23]" "genblk1[23]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2629f0 .param/l "idx" 0 3 11, +C4<010111>;
+S_0x55570d262ad0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d262820;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27be70 .functor XOR 1, L_0x55570d27bf10, L_0x55570d27c000, C4<0>, C4<0>;
+v0x55570d262d10_0 .net "p", 0 0, L_0x55570d27bf10;  1 drivers
+v0x55570d262df0_0 .net "q", 0 0, L_0x55570d27c000;  1 drivers
+v0x55570d262eb0_0 .net "r", 0 0, L_0x55570d27be70;  1 drivers
+S_0x55570d263000 .scope generate, "genblk1[24]" "genblk1[24]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2631d0 .param/l "idx" 0 3 11, +C4<011000>;
+S_0x55570d2632b0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d263000;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27c280 .functor XOR 1, L_0x55570d27c320, L_0x55570d27c410, C4<0>, C4<0>;
+v0x55570d2634f0_0 .net "p", 0 0, L_0x55570d27c320;  1 drivers
+v0x55570d2635d0_0 .net "q", 0 0, L_0x55570d27c410;  1 drivers
+v0x55570d263690_0 .net "r", 0 0, L_0x55570d27c280;  1 drivers
+S_0x55570d2637e0 .scope generate, "genblk1[25]" "genblk1[25]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2639b0 .param/l "idx" 0 3 11, +C4<011001>;
+S_0x55570d263a90 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2637e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27c6a0 .functor XOR 1, L_0x55570d27c740, L_0x55570d27c830, C4<0>, C4<0>;
+v0x55570d263cd0_0 .net "p", 0 0, L_0x55570d27c740;  1 drivers
+v0x55570d263db0_0 .net "q", 0 0, L_0x55570d27c830;  1 drivers
+v0x55570d263e70_0 .net "r", 0 0, L_0x55570d27c6a0;  1 drivers
+S_0x55570d263fc0 .scope generate, "genblk1[26]" "genblk1[26]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d264190 .param/l "idx" 0 3 11, +C4<011010>;
+S_0x55570d264270 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d263fc0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27cad0 .functor XOR 1, L_0x55570d27cb70, L_0x55570d27cc60, C4<0>, C4<0>;
+v0x55570d2644b0_0 .net "p", 0 0, L_0x55570d27cb70;  1 drivers
+v0x55570d264590_0 .net "q", 0 0, L_0x55570d27cc60;  1 drivers
+v0x55570d264650_0 .net "r", 0 0, L_0x55570d27cad0;  1 drivers
+S_0x55570d2647a0 .scope generate, "genblk1[27]" "genblk1[27]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d264970 .param/l "idx" 0 3 11, +C4<011011>;
+S_0x55570d264a50 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2647a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27cf10 .functor XOR 1, L_0x55570d27cfb0, L_0x55570d27d0a0, C4<0>, C4<0>;
+v0x55570d264c90_0 .net "p", 0 0, L_0x55570d27cfb0;  1 drivers
+v0x55570d264d70_0 .net "q", 0 0, L_0x55570d27d0a0;  1 drivers
+v0x55570d264e30_0 .net "r", 0 0, L_0x55570d27cf10;  1 drivers
+S_0x55570d264f80 .scope generate, "genblk1[28]" "genblk1[28]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d265150 .param/l "idx" 0 3 11, +C4<011100>;
+S_0x55570d265230 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d264f80;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27d360 .functor XOR 1, L_0x55570d27d400, L_0x55570d27d4f0, C4<0>, C4<0>;
+v0x55570d265470_0 .net "p", 0 0, L_0x55570d27d400;  1 drivers
+v0x55570d265550_0 .net "q", 0 0, L_0x55570d27d4f0;  1 drivers
+v0x55570d265610_0 .net "r", 0 0, L_0x55570d27d360;  1 drivers
+S_0x55570d265760 .scope generate, "genblk1[29]" "genblk1[29]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d265930 .param/l "idx" 0 3 11, +C4<011101>;
+S_0x55570d265a10 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d265760;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27d7c0 .functor XOR 1, L_0x55570d27d860, L_0x55570d27d950, C4<0>, C4<0>;
+v0x55570d265c50_0 .net "p", 0 0, L_0x55570d27d860;  1 drivers
+v0x55570d265d30_0 .net "q", 0 0, L_0x55570d27d950;  1 drivers
+v0x55570d265df0_0 .net "r", 0 0, L_0x55570d27d7c0;  1 drivers
+S_0x55570d265f40 .scope generate, "genblk1[30]" "genblk1[30]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d266110 .param/l "idx" 0 3 11, +C4<011110>;
+S_0x55570d2661f0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d265f40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27dc30 .functor XOR 1, L_0x55570d27dcd0, L_0x55570d27e1d0, C4<0>, C4<0>;
+v0x55570d266430_0 .net "p", 0 0, L_0x55570d27dcd0;  1 drivers
+v0x55570d266510_0 .net "q", 0 0, L_0x55570d27e1d0;  1 drivers
+v0x55570d2665d0_0 .net "r", 0 0, L_0x55570d27dc30;  1 drivers
+S_0x55570d266720 .scope generate, "genblk1[31]" "genblk1[31]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2668f0 .param/l "idx" 0 3 11, +C4<011111>;
+S_0x55570d2669d0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d266720;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27e8d0 .functor XOR 1, L_0x55570d27e970, L_0x55570d27ea60, C4<0>, C4<0>;
+v0x55570d266c10_0 .net "p", 0 0, L_0x55570d27e970;  1 drivers
+v0x55570d266cf0_0 .net "q", 0 0, L_0x55570d27ea60;  1 drivers
+v0x55570d266db0_0 .net "r", 0 0, L_0x55570d27e8d0;  1 drivers
+S_0x55570d266f00 .scope generate, "genblk1[32]" "genblk1[32]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2670d0 .param/l "idx" 0 3 11, +C4<0100000>;
+S_0x55570d2671c0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d266f00;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27ed60 .functor XOR 1, L_0x55570d27ee00, L_0x55570d27eef0, C4<0>, C4<0>;
+v0x55570d267420_0 .net "p", 0 0, L_0x55570d27ee00;  1 drivers
+v0x55570d267500_0 .net "q", 0 0, L_0x55570d27eef0;  1 drivers
+v0x55570d2675c0_0 .net "r", 0 0, L_0x55570d27ed60;  1 drivers
+S_0x55570d2676e0 .scope generate, "genblk1[33]" "genblk1[33]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2678b0 .param/l "idx" 0 3 11, +C4<0100001>;
+S_0x55570d2679a0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2676e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27f200 .functor XOR 1, L_0x55570d27f2a0, L_0x55570d27f390, C4<0>, C4<0>;
+v0x55570d267c00_0 .net "p", 0 0, L_0x55570d27f2a0;  1 drivers
+v0x55570d267ce0_0 .net "q", 0 0, L_0x55570d27f390;  1 drivers
+v0x55570d267da0_0 .net "r", 0 0, L_0x55570d27f200;  1 drivers
+S_0x55570d267ec0 .scope generate, "genblk1[34]" "genblk1[34]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d268090 .param/l "idx" 0 3 11, +C4<0100010>;
+S_0x55570d268180 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d267ec0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27f6b0 .functor XOR 1, L_0x55570d27f750, L_0x55570d27f840, C4<0>, C4<0>;
+v0x55570d2683e0_0 .net "p", 0 0, L_0x55570d27f750;  1 drivers
+v0x55570d2684c0_0 .net "q", 0 0, L_0x55570d27f840;  1 drivers
+v0x55570d268580_0 .net "r", 0 0, L_0x55570d27f6b0;  1 drivers
+S_0x55570d2686a0 .scope generate, "genblk1[35]" "genblk1[35]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d268870 .param/l "idx" 0 3 11, +C4<0100011>;
+S_0x55570d268960 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2686a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d27fb70 .functor XOR 1, L_0x55570d27fc10, L_0x55570d27fd00, C4<0>, C4<0>;
+v0x55570d268bc0_0 .net "p", 0 0, L_0x55570d27fc10;  1 drivers
+v0x55570d268ca0_0 .net "q", 0 0, L_0x55570d27fd00;  1 drivers
+v0x55570d268d60_0 .net "r", 0 0, L_0x55570d27fb70;  1 drivers
+S_0x55570d268e80 .scope generate, "genblk1[36]" "genblk1[36]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d269050 .param/l "idx" 0 3 11, +C4<0100100>;
+S_0x55570d269140 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d268e80;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d280040 .functor XOR 1, L_0x55570d2800e0, L_0x55570d2801d0, C4<0>, C4<0>;
+v0x55570d2693a0_0 .net "p", 0 0, L_0x55570d2800e0;  1 drivers
+v0x55570d269480_0 .net "q", 0 0, L_0x55570d2801d0;  1 drivers
+v0x55570d269540_0 .net "r", 0 0, L_0x55570d280040;  1 drivers
+S_0x55570d269660 .scope generate, "genblk1[37]" "genblk1[37]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d269830 .param/l "idx" 0 3 11, +C4<0100101>;
+S_0x55570d269920 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d269660;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d280520 .functor XOR 1, L_0x55570d2805c0, L_0x55570d2806b0, C4<0>, C4<0>;
+v0x55570d269b80_0 .net "p", 0 0, L_0x55570d2805c0;  1 drivers
+v0x55570d269c60_0 .net "q", 0 0, L_0x55570d2806b0;  1 drivers
+v0x55570d269d20_0 .net "r", 0 0, L_0x55570d280520;  1 drivers
+S_0x55570d269e40 .scope generate, "genblk1[38]" "genblk1[38]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26a010 .param/l "idx" 0 3 11, +C4<0100110>;
+S_0x55570d26a100 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d269e40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d280a10 .functor XOR 1, L_0x55570d280ab0, L_0x55570d280ba0, C4<0>, C4<0>;
+v0x55570d26a360_0 .net "p", 0 0, L_0x55570d280ab0;  1 drivers
+v0x55570d26a440_0 .net "q", 0 0, L_0x55570d280ba0;  1 drivers
+v0x55570d26a500_0 .net "r", 0 0, L_0x55570d280a10;  1 drivers
+S_0x55570d26a620 .scope generate, "genblk1[39]" "genblk1[39]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26a7f0 .param/l "idx" 0 3 11, +C4<0100111>;
+S_0x55570d26a8e0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26a620;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d280f10 .functor XOR 1, L_0x55570d280fb0, L_0x55570d2810a0, C4<0>, C4<0>;
+v0x55570d26ab40_0 .net "p", 0 0, L_0x55570d280fb0;  1 drivers
+v0x55570d26ac20_0 .net "q", 0 0, L_0x55570d2810a0;  1 drivers
+v0x55570d26ace0_0 .net "r", 0 0, L_0x55570d280f10;  1 drivers
+S_0x55570d26ae00 .scope generate, "genblk1[40]" "genblk1[40]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26afd0 .param/l "idx" 0 3 11, +C4<0101000>;
+S_0x55570d26b0c0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26ae00;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d281420 .functor XOR 1, L_0x55570d2814c0, L_0x55570d2815b0, C4<0>, C4<0>;
+v0x55570d26b320_0 .net "p", 0 0, L_0x55570d2814c0;  1 drivers
+v0x55570d26b400_0 .net "q", 0 0, L_0x55570d2815b0;  1 drivers
+v0x55570d26b4c0_0 .net "r", 0 0, L_0x55570d281420;  1 drivers
+S_0x55570d26b5e0 .scope generate, "genblk1[41]" "genblk1[41]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26b7b0 .param/l "idx" 0 3 11, +C4<0101001>;
+S_0x55570d26b8a0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26b5e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d281940 .functor XOR 1, L_0x55570d2819e0, L_0x55570d281ad0, C4<0>, C4<0>;
+v0x55570d26bb00_0 .net "p", 0 0, L_0x55570d2819e0;  1 drivers
+v0x55570d26bbe0_0 .net "q", 0 0, L_0x55570d281ad0;  1 drivers
+v0x55570d26bca0_0 .net "r", 0 0, L_0x55570d281940;  1 drivers
+S_0x55570d26bdc0 .scope generate, "genblk1[42]" "genblk1[42]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26bf90 .param/l "idx" 0 3 11, +C4<0101010>;
+S_0x55570d26c080 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26bdc0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d281e70 .functor XOR 1, L_0x55570d281f10, L_0x55570d282000, C4<0>, C4<0>;
+v0x55570d26c2e0_0 .net "p", 0 0, L_0x55570d281f10;  1 drivers
+v0x55570d26c3c0_0 .net "q", 0 0, L_0x55570d282000;  1 drivers
+v0x55570d26c480_0 .net "r", 0 0, L_0x55570d281e70;  1 drivers
+S_0x55570d26c5a0 .scope generate, "genblk1[43]" "genblk1[43]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26c770 .param/l "idx" 0 3 11, +C4<0101011>;
+S_0x55570d26c860 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26c5a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2823b0 .functor XOR 1, L_0x55570d282450, L_0x55570d282540, C4<0>, C4<0>;
+v0x55570d26cac0_0 .net "p", 0 0, L_0x55570d282450;  1 drivers
+v0x55570d26cba0_0 .net "q", 0 0, L_0x55570d282540;  1 drivers
+v0x55570d26cc60_0 .net "r", 0 0, L_0x55570d2823b0;  1 drivers
+S_0x55570d26cd80 .scope generate, "genblk1[44]" "genblk1[44]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26cf50 .param/l "idx" 0 3 11, +C4<0101100>;
+S_0x55570d26d040 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26cd80;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d282900 .functor XOR 1, L_0x55570d2829a0, L_0x55570d282a90, C4<0>, C4<0>;
+v0x55570d26d2a0_0 .net "p", 0 0, L_0x55570d2829a0;  1 drivers
+v0x55570d26d380_0 .net "q", 0 0, L_0x55570d282a90;  1 drivers
+v0x55570d26d440_0 .net "r", 0 0, L_0x55570d282900;  1 drivers
+S_0x55570d26d560 .scope generate, "genblk1[45]" "genblk1[45]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26d730 .param/l "idx" 0 3 11, +C4<0101101>;
+S_0x55570d26d820 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26d560;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d282e60 .functor XOR 1, L_0x55570d282f00, L_0x55570d282ff0, C4<0>, C4<0>;
+v0x55570d26da80_0 .net "p", 0 0, L_0x55570d282f00;  1 drivers
+v0x55570d26db60_0 .net "q", 0 0, L_0x55570d282ff0;  1 drivers
+v0x55570d26dc20_0 .net "r", 0 0, L_0x55570d282e60;  1 drivers
+S_0x55570d26dd40 .scope generate, "genblk1[46]" "genblk1[46]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26df10 .param/l "idx" 0 3 11, +C4<0101110>;
+S_0x55570d26e000 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26dd40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2833d0 .functor XOR 1, L_0x55570d283470, L_0x55570d283560, C4<0>, C4<0>;
+v0x55570d26e260_0 .net "p", 0 0, L_0x55570d283470;  1 drivers
+v0x55570d26e340_0 .net "q", 0 0, L_0x55570d283560;  1 drivers
+v0x55570d26e400_0 .net "r", 0 0, L_0x55570d2833d0;  1 drivers
+S_0x55570d26e520 .scope generate, "genblk1[47]" "genblk1[47]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26e6f0 .param/l "idx" 0 3 11, +C4<0101111>;
+S_0x55570d26e7e0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26e520;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d283950 .functor XOR 1, L_0x55570d2839f0, L_0x55570d283ae0, C4<0>, C4<0>;
+v0x55570d26ea40_0 .net "p", 0 0, L_0x55570d2839f0;  1 drivers
+v0x55570d26eb20_0 .net "q", 0 0, L_0x55570d283ae0;  1 drivers
+v0x55570d26ebe0_0 .net "r", 0 0, L_0x55570d283950;  1 drivers
+S_0x55570d26ed00 .scope generate, "genblk1[48]" "genblk1[48]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26eed0 .param/l "idx" 0 3 11, +C4<0110000>;
+S_0x55570d26efc0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26ed00;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d283ee0 .functor XOR 1, L_0x55570d283f80, L_0x55570d284070, C4<0>, C4<0>;
+v0x55570d26f220_0 .net "p", 0 0, L_0x55570d283f80;  1 drivers
+v0x55570d26f300_0 .net "q", 0 0, L_0x55570d284070;  1 drivers
+v0x55570d26f3c0_0 .net "r", 0 0, L_0x55570d283ee0;  1 drivers
+S_0x55570d26f4e0 .scope generate, "genblk1[49]" "genblk1[49]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26f6b0 .param/l "idx" 0 3 11, +C4<0110001>;
+S_0x55570d26f7a0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26f4e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d284480 .functor XOR 1, L_0x55570d284520, L_0x55570d284610, C4<0>, C4<0>;
+v0x55570d26fa00_0 .net "p", 0 0, L_0x55570d284520;  1 drivers
+v0x55570d26fae0_0 .net "q", 0 0, L_0x55570d284610;  1 drivers
+v0x55570d26fba0_0 .net "r", 0 0, L_0x55570d284480;  1 drivers
+S_0x55570d26fcc0 .scope generate, "genblk1[50]" "genblk1[50]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d26fe90 .param/l "idx" 0 3 11, +C4<0110010>;
+S_0x55570d26ff80 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d26fcc0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d284a30 .functor XOR 1, L_0x55570d284ad0, L_0x55570d284bc0, C4<0>, C4<0>;
+v0x55570d2701e0_0 .net "p", 0 0, L_0x55570d284ad0;  1 drivers
+v0x55570d2702c0_0 .net "q", 0 0, L_0x55570d284bc0;  1 drivers
+v0x55570d270380_0 .net "r", 0 0, L_0x55570d284a30;  1 drivers
+S_0x55570d2704a0 .scope generate, "genblk1[51]" "genblk1[51]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d270670 .param/l "idx" 0 3 11, +C4<0110011>;
+S_0x55570d270760 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2704a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d284ff0 .functor XOR 1, L_0x55570d285090, L_0x55570d285180, C4<0>, C4<0>;
+v0x55570d2709c0_0 .net "p", 0 0, L_0x55570d285090;  1 drivers
+v0x55570d270aa0_0 .net "q", 0 0, L_0x55570d285180;  1 drivers
+v0x55570d270b60_0 .net "r", 0 0, L_0x55570d284ff0;  1 drivers
+S_0x55570d270c80 .scope generate, "genblk1[52]" "genblk1[52]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d270e50 .param/l "idx" 0 3 11, +C4<0110100>;
+S_0x55570d270f40 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d270c80;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2855c0 .functor XOR 1, L_0x55570d285660, L_0x55570d285750, C4<0>, C4<0>;
+v0x55570d2711a0_0 .net "p", 0 0, L_0x55570d285660;  1 drivers
+v0x55570d271280_0 .net "q", 0 0, L_0x55570d285750;  1 drivers
+v0x55570d271340_0 .net "r", 0 0, L_0x55570d2855c0;  1 drivers
+S_0x55570d271460 .scope generate, "genblk1[53]" "genblk1[53]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d271630 .param/l "idx" 0 3 11, +C4<0110101>;
+S_0x55570d271720 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d271460;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d285ba0 .functor XOR 1, L_0x55570d285c40, L_0x55570d285d30, C4<0>, C4<0>;
+v0x55570d271980_0 .net "p", 0 0, L_0x55570d285c40;  1 drivers
+v0x55570d271a60_0 .net "q", 0 0, L_0x55570d285d30;  1 drivers
+v0x55570d271b20_0 .net "r", 0 0, L_0x55570d285ba0;  1 drivers
+S_0x55570d271c40 .scope generate, "genblk1[54]" "genblk1[54]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d271e10 .param/l "idx" 0 3 11, +C4<0110110>;
+S_0x55570d271f00 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d271c40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d286190 .functor XOR 1, L_0x55570d286230, L_0x55570d286320, C4<0>, C4<0>;
+v0x55570d272160_0 .net "p", 0 0, L_0x55570d286230;  1 drivers
+v0x55570d272240_0 .net "q", 0 0, L_0x55570d286320;  1 drivers
+v0x55570d272300_0 .net "r", 0 0, L_0x55570d286190;  1 drivers
+S_0x55570d272420 .scope generate, "genblk1[55]" "genblk1[55]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2725f0 .param/l "idx" 0 3 11, +C4<0110111>;
+S_0x55570d2726e0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d272420;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d286790 .functor XOR 1, L_0x55570d286830, L_0x55570d286920, C4<0>, C4<0>;
+v0x55570d272940_0 .net "p", 0 0, L_0x55570d286830;  1 drivers
+v0x55570d272a20_0 .net "q", 0 0, L_0x55570d286920;  1 drivers
+v0x55570d272ae0_0 .net "r", 0 0, L_0x55570d286790;  1 drivers
+S_0x55570d272c00 .scope generate, "genblk1[56]" "genblk1[56]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d272dd0 .param/l "idx" 0 3 11, +C4<0111000>;
+S_0x55570d272ec0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d272c00;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d286da0 .functor XOR 1, L_0x55570d286e40, L_0x55570d286f30, C4<0>, C4<0>;
+v0x55570d273120_0 .net "p", 0 0, L_0x55570d286e40;  1 drivers
+v0x55570d273200_0 .net "q", 0 0, L_0x55570d286f30;  1 drivers
+v0x55570d2732c0_0 .net "r", 0 0, L_0x55570d286da0;  1 drivers
+S_0x55570d2733e0 .scope generate, "genblk1[57]" "genblk1[57]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2735b0 .param/l "idx" 0 3 11, +C4<0111001>;
+S_0x55570d2736a0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2733e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2873c0 .functor XOR 1, L_0x55570d287460, L_0x55570d287550, C4<0>, C4<0>;
+v0x55570d273900_0 .net "p", 0 0, L_0x55570d287460;  1 drivers
+v0x55570d2739e0_0 .net "q", 0 0, L_0x55570d287550;  1 drivers
+v0x55570d273aa0_0 .net "r", 0 0, L_0x55570d2873c0;  1 drivers
+S_0x55570d273bc0 .scope generate, "genblk1[58]" "genblk1[58]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d273d90 .param/l "idx" 0 3 11, +C4<0111010>;
+S_0x55570d273e80 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d273bc0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d2879f0 .functor XOR 1, L_0x55570d287a90, L_0x55570d287b80, C4<0>, C4<0>;
+v0x55570d2740e0_0 .net "p", 0 0, L_0x55570d287a90;  1 drivers
+v0x55570d2741c0_0 .net "q", 0 0, L_0x55570d287b80;  1 drivers
+v0x55570d274280_0 .net "r", 0 0, L_0x55570d2879f0;  1 drivers
+S_0x55570d2743a0 .scope generate, "genblk1[59]" "genblk1[59]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d274570 .param/l "idx" 0 3 11, +C4<0111011>;
+S_0x55570d274660 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d2743a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d288030 .functor XOR 1, L_0x55570d2880d0, L_0x55570d2881c0, C4<0>, C4<0>;
+v0x55570d2748c0_0 .net "p", 0 0, L_0x55570d2880d0;  1 drivers
+v0x55570d2749a0_0 .net "q", 0 0, L_0x55570d2881c0;  1 drivers
+v0x55570d274a60_0 .net "r", 0 0, L_0x55570d288030;  1 drivers
+S_0x55570d274b80 .scope generate, "genblk1[60]" "genblk1[60]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d274d50 .param/l "idx" 0 3 11, +C4<0111100>;
+S_0x55570d274e40 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d274b80;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d288680 .functor XOR 1, L_0x55570d288720, L_0x55570d288810, C4<0>, C4<0>;
+v0x55570d2750a0_0 .net "p", 0 0, L_0x55570d288720;  1 drivers
+v0x55570d275180_0 .net "q", 0 0, L_0x55570d288810;  1 drivers
+v0x55570d275240_0 .net "r", 0 0, L_0x55570d288680;  1 drivers
+S_0x55570d275360 .scope generate, "genblk1[61]" "genblk1[61]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d275530 .param/l "idx" 0 3 11, +C4<0111101>;
+S_0x55570d275620 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d275360;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d288ce0 .functor XOR 1, L_0x55570d288d80, L_0x55570d288e70, C4<0>, C4<0>;
+v0x55570d275880_0 .net "p", 0 0, L_0x55570d288d80;  1 drivers
+v0x55570d275960_0 .net "q", 0 0, L_0x55570d288e70;  1 drivers
+v0x55570d275a20_0 .net "r", 0 0, L_0x55570d288ce0;  1 drivers
+S_0x55570d275b40 .scope generate, "genblk1[62]" "genblk1[62]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d275d10 .param/l "idx" 0 3 11, +C4<0111110>;
+S_0x55570d275e00 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d275b40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d289350 .functor XOR 1, L_0x55570d2893f0, L_0x55570d289cf0, C4<0>, C4<0>;
+v0x55570d276060_0 .net "p", 0 0, L_0x55570d2893f0;  1 drivers
+v0x55570d276140_0 .net "q", 0 0, L_0x55570d289cf0;  1 drivers
+v0x55570d276200_0 .net "r", 0 0, L_0x55570d289350;  1 drivers
+S_0x55570d276320 .scope generate, "genblk1[63]" "genblk1[63]" 3 11, 3 11 0, S_0x55570d249750;
+ .timescale -9 -12;
+P_0x55570d2764f0 .param/l "idx" 0 3 11, +C4<0111111>;
+S_0x55570d2765e0 .scope module, "gate1" "xorg" 3 12, 4 3 0, S_0x55570d276320;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "p"
+    .port_info 1 /INPUT 1 "q"
+    .port_info 2 /OUTPUT 1 "r"
+L_0x55570d28a9f0 .functor XOR 1, L_0x55570d28aa90, L_0x55570d28ab80, C4<0>, C4<0>;
+v0x55570d276840_0 .net "p", 0 0, L_0x55570d28aa90;  1 drivers
+v0x55570d276920_0 .net "q", 0 0, L_0x55570d28ab80;  1 drivers
+v0x55570d2769e0_0 .net "r", 0 0, L_0x55570d28a9f0;  1 drivers
+    .scope S_0x55570d249ae0;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "xor64_tb.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55570d249ae0 {0 0 0};
+    %pushi/vec4 0, 0, 64;
+    %store/vec4 v0x55570d276e30_0, 0, 64;
+    %pushi/vec4 0, 0, 64;
+    %store/vec4 v0x55570d276f20_0, 0, 64;
+    %end;
+    .thread T_0;
+    .scope S_0x55570d249ae0;
+T_1 ;
+    %delay 50000, 0;
+    %pushi/vec4 69, 0, 64;
+    %store/vec4 v0x55570d276e30_0, 0, 64;
+    %delay 50000, 0;
+    %pushi/vec4 4294967295, 0, 32;
+    %concati/vec4 4294967200, 0, 32;
+    %store/vec4 v0x55570d276f20_0, 0, 64;
+    %delay 50000, 0;
+    %load/vec4 v0x55570d276e30_0;
+    %load/vec4 v0x55570d276f20_0;
+    %load/vec4 v0x55570d276ff0_0;
+    %vpi_call 2 24 "$display", "time = %0t \011\012p = %b\012q = %b\012r = %b", $time, S<2,vec4,s64>, S<1,vec4,s64>, S<0,vec4,s64> {3 0 0};
+    %delay 50000, 0;
+    %pushi/vec4 4, 0, 64;
+    %store/vec4 v0x55570d276e30_0, 0, 64;
+    %delay 50000, 0;
+    %pushi/vec4 5, 0, 64;
+    %store/vec4 v0x55570d276f20_0, 0, 64;
+    %delay 50000, 0;
+    %load/vec4 v0x55570d276e30_0;
+    %load/vec4 v0x55570d276f20_0;
+    %load/vec4 v0x55570d276ff0_0;
+    %vpi_call 2 30 "$display", "time = %0t \011\012p = %b\012q = %b\012r = %b", $time, S<2,vec4,s64>, S<1,vec4,s64>, S<0,vec4,s64> {3 0 0};
+    %delay 50000, 0;
+    %pushi/vec4 14, 0, 64;
+    %store/vec4 v0x55570d276e30_0, 0, 64;
+    %delay 50000, 0;
+    %pushi/vec4 9, 0, 64;
+    %store/vec4 v0x55570d276f20_0, 0, 64;
+    %delay 50000, 0;
+    %load/vec4 v0x55570d276e30_0;
+    %load/vec4 v0x55570d276f20_0;
+    %load/vec4 v0x55570d276ff0_0;
+    %vpi_call 2 36 "$display", "time = %0t \011\012p = %b\012q = %b\012r = %b", $time, S<2,vec4,s64>, S<1,vec4,s64>, S<0,vec4,s64> {3 0 0};
+    %delay 50000, 0;
+    %pushi/vec4 4294967295, 0, 32;
+    %concati/vec4 4294967201, 0, 32;
+    %store/vec4 v0x55570d276e30_0, 0, 64;
+    %delay 50000, 0;
+    %pushi/vec4 23, 0, 64;
+    %store/vec4 v0x55570d276f20_0, 0, 64;
+    %delay 50000, 0;
+    %load/vec4 v0x55570d276e30_0;
+    %load/vec4 v0x55570d276f20_0;
+    %load/vec4 v0x55570d276ff0_0;
+    %vpi_call 2 42 "$display", "time = %0t \011\012p = %b\012q = %b\012r = %b", $time, S<2,vec4,s64>, S<1,vec4,s64>, S<0,vec4,s64> {3 0 0};
+    %delay 50000, 0;
+    %pushi/vec4 44, 0, 64;
+    %store/vec4 v0x55570d276e30_0, 0, 64;
+    %delay 50000, 0;
+    %pushi/vec4 4, 0, 64;
+    %store/vec4 v0x55570d276f20_0, 0, 64;
+    %delay 50000, 0;
+    %load/vec4 v0x55570d276e30_0;
+    %load/vec4 v0x55570d276f20_0;
+    %load/vec4 v0x55570d276ff0_0;
+    %vpi_call 2 48 "$display", "time = %0t \011\012p = %b\012q = %b\012r = %b", $time, S<2,vec4,s64>, S<1,vec4,s64>, S<0,vec4,s64> {3 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "xor64_tb.v";
+    "xor64.v";
+    "xorg.v";
